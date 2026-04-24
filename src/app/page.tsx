@@ -105,7 +105,7 @@ function LandingGrid({ onSelect }: { onSelect: (id: string) => void }) {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="flex h-full items-center justify-center px-4"
     >
-      <div className="relative aspect-square w-[min(88vw,88vh)] max-w-[680px]">
+      <div className="relative aspect-square w-[min(88vw,88vh)] max-w-[620px]">
         <motion.div
           initial={{ scale: 0.985 }}
           animate={{ scale: 1 }}
@@ -216,11 +216,11 @@ function SectionView({
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="absolute inset-0"
     >
-      <div className="grid h-full w-full lg:grid-cols-[1fr_1fr]">
+      <div className="grid h-full w-full lg:grid-cols-[0.9fr_1.1fr]">
         {isLeft ? (
           <>
-            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-14">
-              <div className="mx-auto w-full max-w-2xl text-left">
+            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-16">
+              <div className="mx-auto w-full max-w-3xl text-left">
                 <p className="max-w-xl text-base leading-8 text-slate-300 md:text-lg">
                   {section.overview}
                 </p>
@@ -243,8 +243,8 @@ function SectionView({
               </div>
             </div>
 
-            <div className={`relative min-h-[40vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
-              <div className="absolute inset-0 opacity-100">
+            <div className={`relative min-h-[32vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
+              <div className="absolute inset-0 opacity-95">
                 <HeroCollage seed={section.id} />
               </div>
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,6,23,0.34),rgba(2,6,23,0.92))]" />
@@ -267,8 +267,8 @@ function SectionView({
           </>
         ) : (
           <>
-            <div className={`relative min-h-[40vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
-              <div className="absolute inset-0 opacity-100">
+            <div className={`relative min-h-[32vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
+              <div className="absolute inset-0 opacity-95">
                 <HeroCollage seed={section.id} />
               </div>
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,6,23,0.34),rgba(2,6,23,0.92))]" />
@@ -289,7 +289,7 @@ function SectionView({
               </div>
             </div>
 
-            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-14">
+            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-16">
               <div className={`mx-auto w-full max-w-2xl ${isLeft ? "text-left" : "text-right"}`}>
                 <p className={`max-w-xl text-base leading-8 text-slate-300 md:text-lg ${isLeft ? "" : "ml-auto"}`}>
                   {section.overview}
@@ -320,41 +320,33 @@ function SectionView({
 }
 
 function HeroCollage({ seed }: { seed: string }) {
-  const images = [
-    `https://picsum.photos/seed/${seed}-a/900/700`,
-    `https://picsum.photos/seed/${seed}-b/700/900`,
-    `https://picsum.photos/seed/${seed}-c/600/420`,
-    `https://picsum.photos/seed/${seed}-d/520/680`,
-    `https://picsum.photos/seed/${seed}-e/640/640`,
-    `https://picsum.photos/seed/${seed}-f/760/520`,
-    `https://picsum.photos/seed/${seed}-g/540/760`,
-    `https://picsum.photos/seed/${seed}-h/680/480`,
-    `https://picsum.photos/seed/${seed}-i/620/620`,
-    `https://picsum.photos/seed/${seed}-j/500/700`,
-    `https://picsum.photos/seed/${seed}-k/720/540`,
-    `https://picsum.photos/seed/${seed}-l/640/860`,
-  ];
-
+  const images = Array.from({ length: 18 }, (_, i) => `https://picsum.photos/seed/${seed}-${String.fromCharCode(97 + i)}/800/800`);
   const tiles = [
-    { src: images[0], className: "left-[2%] top-[2%] h-[31%] w-[29%]" },
-    { src: images[1], className: "left-[23%] top-[4%] h-[25%] w-[19%]" },
-    { src: images[2], className: "left-[48%] top-[2%] h-[22%] w-[17%]" },
-    { src: images[3], className: "right-[2%] top-[5%] h-[29%] w-[22%]" },
-    { src: images[4], className: "left-[8%] top-[33%] h-[25%] w-[18%]" },
-    { src: images[5], className: "left-[31%] top-[28%] h-[22%] w-[22%]" },
-    { src: images[6], className: "right-[10%] top-[33%] h-[24%] w-[18%]" },
-    { src: images[7], className: "left-[2%] bottom-[5%] h-[24%] w-[20%]" },
-    { src: images[8], className: "left-[22%] bottom-[4%] h-[20%] w-[17%]" },
-    { src: images[9], className: "right-[24%] bottom-[5%] h-[22%] w-[16%]" },
-    { src: images[10], className: "right-[6%] bottom-[6%] h-[26%] w-[20%]" },
-    { src: images[11], className: "left-[44%] top-[55%] h-[20%] w-[15%]" },
+    { src: images[0], col: "col-span-2 row-span-2" },
+    { src: images[1], col: "col-span-1 row-span-2" },
+    { src: images[2], col: "col-span-1 row-span-1" },
+    { src: images[3], col: "col-span-1 row-span-1" },
+    { src: images[4], col: "col-span-1 row-span-2" },
+    { src: images[5], col: "col-span-2 row-span-1" },
+    { src: images[6], col: "col-span-1 row-span-1" },
+    { src: images[7], col: "col-span-1 row-span-2" },
+    { src: images[8], col: "col-span-1 row-span-1" },
+    { src: images[9], col: "col-span-2 row-span-1" },
+    { src: images[10], col: "col-span-1 row-span-1" },
+    { src: images[11], col: "col-span-1 row-span-1" },
+    { src: images[12], col: "col-span-1 row-span-2" },
+    { src: images[13], col: "col-span-1 row-span-1" },
+    { src: images[14], col: "col-span-2 row-span-1" },
+    { src: images[15], col: "col-span-1 row-span-1" },
+    { src: images[16], col: "col-span-1 row-span-1" },
+    { src: images[17], col: "col-span-2 row-span-1" },
   ] as const;
 
   return (
-    <div className="relative h-full w-full">
+    <div className="grid h-full w-full grid-cols-6 grid-rows-8 gap-0.5 p-0.5 md:gap-1 md:p-1">
       {tiles.map((tile, idx) => (
-        <div key={tile.src} className={`absolute overflow-hidden rounded-[1rem] border border-white/10 shadow-[0_18px_60px_rgba(0,0,0,0.32)] ${tile.className}`}>
-          <Image src={tile.src} alt={`collage ${idx + 1}`} fill sizes="18vw" className="object-cover" unoptimized />
+        <div key={tile.src} className={`relative overflow-hidden rounded-[0.6rem] border border-white/10 shadow-[0_18px_60px_rgba(0,0,0,0.25)] ${tile.col}`}>
+          <Image src={tile.src} alt={`collage ${idx + 1}`} fill sizes="16vw" className="object-cover" unoptimized />
         </div>
       ))}
     </div>
