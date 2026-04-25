@@ -72,7 +72,7 @@ const sections = [
     side: "right",
     heroImage: "/images/portrait.png",
     overview:
-      "",
+      "Jose Emmanuel Idpan",
     body: [
       "(Portrait Image)",
       "I am someone who values growth, consistency, and living with intention. I believe success comes from discipline, patience, and honest effort rather than quick results. I try to stay realistic about life while still keeping space for ambition, learning, and self-improvement. Guided by values like magis and cura personalis, I aim to do more than what is expected while also staying mindful of my well-being and the people around me. More than achievements, I want to build a life that brings joy to my family and makes the people close to me proud.",
@@ -314,7 +314,7 @@ function SectionView({
               <button
                 type="button"
                 onClick={onBack}
-                className="absolute right-6 top-6 z-20 cursor-pointer rounded-full border border-white/15 bg-slate-950/70 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-white/75 transition hover:border-white/30 hover:text-white"
+                className="absolute left-6 top-6 z-20 cursor-pointer rounded-full border border-white/15 bg-slate-950/70 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-white/75 transition hover:border-white/30 hover:text-white"
               >
                 Back
               </button>
