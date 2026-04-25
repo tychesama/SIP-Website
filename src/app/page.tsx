@@ -8,62 +8,78 @@ const sections = [
   {
     id: "journey-map",
     title: "Journey Map",
+    number: "1",
     accent: "from-cyan-500/55 via-cyan-300/12 to-slate-950",
     border: "border-cyan-300/35",
     side: "left",
     heroImage: "/images/journey-map.png",
     overview:
-      "A visual route through the moments, choices, and pressure points that shaped the path.",
+      "The path that I walked",
     body: [
-      "This chapter maps the movement from curiosity into direction. It is intentionally lighter now, with the focus shifted toward structure, responsiveness, and faster interaction.",
-      "When your final media is ready, this panel can absorb it carefully instead of brute-forcing heavy assets into the first load.",
-    ],
-    bullets: ["early interest in building", "school phases and key turning points", "pressure, adjustment, and forward momentum"],
+      "Journey Map Image",
+      "Paragraph 1",
+      "Paragraph 2",
+    ]
   },
   {
     id: "conversion-story",
     title: "Conversion Story",
+    number: "2",
     accent: "from-violet-500/55 via-fuchsia-300/12 to-slate-950",
     border: "border-violet-300/35",
     side: "right",
     heroImage: "/images/class-1.jpg",
     overview:
-      "The shift from excitement, to uncertainty, to a more grounded understanding of the future.",
+      "How a man changes",
     body: [
-      "This section holds the emotional pivot, first creation, fear about changing technology, then a steadier way of seeing what matters.",
-      "The structure is now intentionally lean, so the visual feel stays sharp without dragging the whole site down.",
-    ],
-    bullets: ["first build and first spark", "fear, confusion, and pressure", "discernment, realism, and clarity"],
+      "One of the first moments that truly changed me was when I started learning how to code in Java and created my first game, Infinity Tower. It was not just a project to me. It was the first time I felt that I could build something from nothing, and that feeling made me genuinely happy. That simple joy became important because it showed me that my future could be shaped by work I create with my own hands. It was a small beginning, but it stirred a deeper sense of purpose in me.",
+      "Another moment that changed me was when AI started rising and I became confused and stressed about my future. I wondered if the path I was taking would still matter, and I struggled with fear about what would happen to people like me who wanted to become developers. That season of uncertainty forced me to face my anxieties honestly. Over time, I began to see AI differently. Instead of treating it as something to fear, I now see it as a tool. Human judgment, creativity, and discernment are still needed, and people cannot be easily replaced. That realization gave me more peace.",
+      "I wrestled with confusion, pressure, and the desire to know what my life would look like after college. I was not only thinking about school, but also about whether I would be ready for the real job market. There were moments of desolation when I felt overwhelmed by change, especially because technology moves so fast. At the same time, there were consoling moments when I remembered why I started in the first place, to learn, to build, and to grow.",
+      "This struggle helped me see that discernment is not about having everything figured out. It is about being honest with reality while still moving forward. In that process, I have learned a kind of cura personalis, because I had to pay attention not only to my skills, but also to my own heart, fears, and limitations. I also began to understand magis more clearly, not as perfection, but as choosing the better path with intention and discipline.",
+      "Now I feel more full, happier, and clearer-minded. I have become more accepting of facts and truths, and more realistic about how the job market works and what opportunities are actually open to me. I no longer see that realism as discouraging. I see it as grounding. It helps me prepare better for the future I want, which is to become a computer science graduate and eventually work as a developer.",
+      "What changed most in me is not just my opinion about AI or careers. It is my way of seeing. I am more grounded, more discerning, and more aligned with the person I hope to become. I still want to grow, learn, and do more, but now with a clearer heart and a steadier mind. That, to me, is part of the path I am meant to walk."
+    ]
   },
   {
     id: "passion-plan",
     title: "Passion Plan",
+    number: "3",
     accent: "from-amber-400/55 via-yellow-200/10 to-slate-950",
     border: "border-amber-200/35",
     side: "left",
     heroImage: "/images/school-1.jpg",
     overview:
-      "A future-facing chamber for values, mission, and the long-game career direction.",
+      "What I want to do",
     body: [
-      "This panel works as a contained manifesto. It should feel intentional and strategic, not overloaded with decoration.",
-      "The final version can layer your real plans on top of this lighter base without wrecking performance.",
+      "Personal Mission Statement (this should be a subheader)",
+      "I am becoming a realistic, hardworking man who is developed, yet still growing. I want to keep improving myself without losing sight of who I am and what matters. What drives me is success, because I want to build a stable life through discipline, patience, and honest effort.",
+      "I want to live by values that keep me grounded and purposeful. For me, this includes magis, cura personalis, and ad majorem Dei gloriam. These values remind me to do more than the minimum, to care for both myself and others, and to offer my work for something greater than myself. The impact I hope to make is simple but meaningful, joy to my family and close friends, and a life they can be proud of.",
+      "Prayer for My Future Self (this should be a subheader)",
+      "Lord, I pray that my hopes and dreams do not stay only with me, but also become real for other people through the hard work they give to their own lives. May no effort be wasted, and may every struggle lead to growth, wisdom, and purpose.","I pray that my growth never stops, and that as I live my life, I continue to improve in character, skill, and faith. In my lows and highs, I ask that You remain with me, guiding me when I am confused, strengthening me when I am weak, and reminding me to keep going when the path feels heavy.",
+      "Help me become the kind of person who can deliver hope and dreams to others, not by empty words, but by a life that shows consistency, humility, and service. May I become someone who reflects Your goodness in the way I work and live.",
+      "10 to 20 Year Passion Plan (this should be a subheader)",
+      "My long-term path is to become a computer developer, business analyst, or workflow engineer. I want to build a career that gives me stability, growth, and a place where I can keep learning while contributing real value. My goal is to earn a job, grow into it, and eventually gain job security in a company while also earning friends along the way.",
+      "I will pursue this path by continuing to strengthen my technical skills, improving my problem-solving ability, and learning how real systems and workflows work in practice. I want to keep choosing the values of magis, cura personalis, and ad majorem Dei gloriam so that my work stays disciplined, caring, and meaningful.",
+      "In 10 to 20 years, I hope to have a life marked by giving and success, one where I can support myself and others, avoid unnecessary hardship, and build something steady and good. I want my career to be more than survival. I want it to be a path of purpose, integrity, and growth."
     ],
     bullets: ["mission and identity", "career paths and skill growth", "stability, purpose, and contribution"],
   },
   {
     id: "about-me",
     title: "About Me",
+    number: "4",
     accent: "from-sky-400/55 via-indigo-300/12 to-slate-950",
     border: "border-sky-200/35",
     side: "right",
     heroImage: "/images/portrait-1.jpg",
     overview:
-      "A more personal chamber for who you are, what drives you, and the tone behind the work.",
+      "(Should be blank, my portrait should be here)",
     body: [
-      "This is where the site becomes human instead of just visually aggressive. For now, the atmosphere is carried by typography and color rather than heavy image payloads.",
-      "That gives you room to add your real media later in a controlled way.",
+      "Lorem Ipsum for now",
+      "Lorem Ipsum",
+      "Gmail"
     ],
-    bullets: ["identity and direction", "skills and style", "personal tone behind the portfolio"],
+    bullets: ["Link to Github", "Link to Gmail", "Linkedin"],
   },
 ] as const;
 
@@ -216,24 +232,20 @@ function SectionView({
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className="absolute inset-0"
     >
-      <div className="grid h-full w-full lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="grid h-full w-full lg:grid-cols-[1fr_1fr]">
         {isLeft ? (
           <>
-            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-16">
-              <div className="mx-auto w-full max-w-3xl text-left">
-                <p className="max-w-xl text-base leading-8 text-slate-300 md:text-lg">
+            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-12">
+              <div className="mx-auto w-full max-w-2xl text-left">
+                <p className="text-xs uppercase tracking-[0.38em] text-white/45">Chapter {section.number}</p>
+                <h2 className="mt-4 text-center text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                  {section.title}
+                </h2>
+                <p className="mt-6 max-w-xl text-base leading-8 text-slate-300 md:text-lg">
                   {section.overview}
                 </p>
 
-                <div className="mt-10 grid gap-4 md:grid-cols-3">
-                  {section.bullets.map((bullet) => (
-                    <div key={bullet} className={`rounded-[1.2rem] border ${section.border} bg-white/4 p-4 text-left`}>
-                      <p className="text-sm leading-7 text-slate-200">{bullet}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-10 space-y-5">
+                <div className="mt-10 space-y-6">
                   {section.body.map((paragraph) => (
                     <p key={paragraph} className="text-sm leading-8 text-slate-300 md:text-base">
                       {paragraph}
@@ -243,8 +255,8 @@ function SectionView({
               </div>
             </div>
 
-            <div className={`relative min-h-[32vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
-              <div className="absolute inset-0 opacity-95">
+            <div className={`relative min-h-[28vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
+              <div className="absolute inset-0 opacity-95 h-full w-full">
                 <HeroCollage seed={section.id} />
               </div>
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,6,23,0.34),rgba(2,6,23,0.92))]" />
@@ -256,8 +268,8 @@ function SectionView({
                 Back
               </button>
               <div className="relative z-10 flex h-full items-end p-8 md:p-12">
-                <div className={`${isLeft ? "ml-auto text-right" : "mr-auto text-left"} max-w-xl`}>
-                  <p className="text-xs uppercase tracking-[0.38em] text-white/70">Chapter X</p>
+                <div className="ml-auto max-w-xl text-right">
+                  <p className="text-xs uppercase tracking-[0.38em] text-white/45">Chapter {section.number}</p>
                   <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-6xl">
                     {section.title}
                   </h1>
@@ -267,9 +279,9 @@ function SectionView({
           </>
         ) : (
           <>
-            <div className={`relative min-h-[32vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
-              <div className="absolute inset-0 opacity-95">
-                <HeroCollage seed={section.id} />
+            <div className={`relative min-h-[28vh] overflow-hidden bg-gradient-to-br ${section.accent}`}>
+              <div className="absolute inset-0 opacity-95 h-full w-full">
+                <HeroCollage seed={section.id} /> {/*i prefer the size here*/}
               </div>
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,6,23,0.34),rgba(2,6,23,0.92))]" />
               <button
@@ -281,7 +293,7 @@ function SectionView({
               </button>
               <div className="relative z-10 flex h-full items-end p-8 md:p-12">
                 <div className={`${isLeft ? "ml-auto text-right" : "mr-auto text-left"} max-w-xl`}>
-                  <p className="text-xs uppercase tracking-[0.38em] text-white/70">Chapter X</p>
+                  <p className="text-xs uppercase tracking-[0.38em] text-white/45">Chapter {section.number}</p>
                   <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white md:text-6xl">
                     {section.title}
                   </h1>
@@ -289,21 +301,17 @@ function SectionView({
               </div>
             </div>
 
-            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-16">
+            <div className="flex h-full min-h-0 items-center bg-[linear-gradient(180deg,rgba(4,8,20,0.95),rgba(2,6,23,1))] px-6 py-8 md:px-10 lg:px-12">
               <div className={`mx-auto w-full max-w-2xl ${isLeft ? "text-left" : "text-right"}`}>
-                <p className={`max-w-xl text-base leading-8 text-slate-300 md:text-lg ${isLeft ? "" : "ml-auto"}`}>
+                <p className="text-xs uppercase tracking-[0.38em] text-white/45">Chapter {section.number}</p>
+                <h2 className="mt-4 text-center text-3xl font-semibold tracking-tight text-white md:text-4xl">
+                  {section.title}
+                </h2>
+                <p className={`mt-6 max-w-xl text-base leading-8 text-slate-300 md:text-lg ${isLeft ? "" : "ml-auto"}`}>
                   {section.overview}
                 </p>
 
-                <div className="mt-10 grid gap-4 md:grid-cols-3">
-                  {section.bullets.map((bullet) => (
-                    <div key={bullet} className={`rounded-[1.2rem] border ${section.border} bg-white/4 p-4 ${isLeft ? "text-left" : "text-right"}`}>
-                      <p className="text-sm leading-7 text-slate-200">{bullet}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-10 space-y-5">
+                <div className="mt-10 space-y-6">
                   {section.body.map((paragraph) => (
                     <p key={paragraph} className="text-sm leading-8 text-slate-300 md:text-base">
                       {paragraph}
@@ -322,18 +330,18 @@ function SectionView({
 function HeroCollage({ seed }: { seed: string }) {
   const images = Array.from({ length: 18 }, (_, i) => `https://picsum.photos/seed/${seed}-${String.fromCharCode(97 + i)}/800/800`);
   const tiles = [
-    { src: images[0], col: "col-span-2 row-span-2" },
+    { src: images[0], col: "col-span-2 row-span-3" },
     { src: images[1], col: "col-span-1 row-span-2" },
     { src: images[2], col: "col-span-1 row-span-1" },
     { src: images[3], col: "col-span-1 row-span-1" },
-    { src: images[4], col: "col-span-1 row-span-2" },
+    { src: images[4], col: "col-span-2 row-span-1" },
     { src: images[5], col: "col-span-2 row-span-1" },
     { src: images[6], col: "col-span-1 row-span-1" },
     { src: images[7], col: "col-span-1 row-span-2" },
     { src: images[8], col: "col-span-1 row-span-1" },
     { src: images[9], col: "col-span-2 row-span-1" },
-    { src: images[10], col: "col-span-1 row-span-1" },
-    { src: images[11], col: "col-span-1 row-span-1" },
+    { src: images[10], col: "col-span-2 row-span-1" },
+    { src: images[11], col: "col-span-2 row-span-2" },
     { src: images[12], col: "col-span-1 row-span-2" },
     { src: images[13], col: "col-span-1 row-span-1" },
     { src: images[14], col: "col-span-2 row-span-1" },
@@ -343,7 +351,7 @@ function HeroCollage({ seed }: { seed: string }) {
   ] as const;
 
   return (
-    <div className="grid h-full w-full grid-cols-6 grid-rows-8 gap-0.5 p-0.5 md:gap-1 md:p-1">
+    <div className="grid h-full w-full grid-cols-4 grid-rows-8 gap-0.5 p-0.5 md:gap-1 md:p-1">
       {tiles.map((tile, idx) => (
         <div key={tile.src} className={`relative overflow-hidden rounded-[0.6rem] border border-white/10 shadow-[0_18px_60px_rgba(0,0,0,0.25)] ${tile.col}`}>
           <Image src={tile.src} alt={`collage ${idx + 1}`} fill sizes="16vw" className="object-cover" unoptimized />
