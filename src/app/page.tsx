@@ -290,7 +290,7 @@ function SectionView({
               <button
                 type="button"
                 onClick={onBack}
-                className="absolute right-6 top-6 z-20 cursor-pointer rounded-full border border-white/15 bg-slate-950/70 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-white/75 transition hover:border-white/30 hover:text-white"
+                className="absolute right-6 top-6 z-20 cursor-pointer rounded-full border border-white/20 bg-slate-900/80 px-5 py-2.5 text-sm font-medium tracking-wide text-white/90 shadow-md backdrop-blur-sm transition-all duration-200 hover:border-white/40 hover:bg-slate-800/90 hover:text-white"
               >
                 Back
               </button>
@@ -314,7 +314,7 @@ function SectionView({
               <button
                 type="button"
                 onClick={onBack}
-                className="absolute left-6 top-6 z-20 cursor-pointer rounded-full border border-white/15 bg-slate-950/70 px-4 py-2 text-[0.65rem] uppercase tracking-[0.28em] text-white/75 transition hover:border-white/30 hover:text-white"
+                className="absolute left-6 top-6 z-20 cursor-pointer rounded-full border border-white/20 bg-slate-900/80 px-5 py-2.5 text-sm font-medium tracking-wide text-white/90 shadow-md backdrop-blur-sm transition-all duration-200 hover:border-white/40 hover:bg-slate-800/90 hover:text-white"
               >
                 Back
               </button>
