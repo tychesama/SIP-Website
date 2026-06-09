@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Seniors' Integration Program Website",
   description: "A no-scroll cinematic SIP website with a centered 2x2 interactive grid and sliding in-place sections.",
   icons: {
-    icon: "/Dice-Logo.svg",
+    icon: "/favicon.svg",
   },
 };
 
